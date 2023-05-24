@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_profile_info_xml_constraintlayout_scene2"
+    app:showPaths="false"
+    tools:context=".Profile_info">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="MissingConstraints"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageViewb"
+        android:layout_width="270dp"
+        android:layout_height="131dp"
+        android:src="@drawable/ted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="MissingConstraints"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+
+        android:id="@+id/textView4b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Oussama Berredjem"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/linearLayout4b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView4b"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Account"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="9dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/emailib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="oussamaprotect@gmail.com"
+                android:textAllCaps="false"
+                android:textColor="#302F2F"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="20dp"
+                android:text="Tap to change email adress"
+                android:textAllCaps="false"
+                android:textColor="#7C7C7C"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_bck" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/usernamib"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Oussama bjm"
+                android:textAllCaps="false"
+                android:textColor="#302F2F"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Tap to change username"
+                android:textAllCaps="false"
+                android:textColor="#7C7C7C"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_bck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:paddingLeft="20dp"
+                android:text="Bio"
+                android:textAllCaps="false"
+                android:textColor="#302F2F"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="20dp"
+                android:text="add a few words about yourself"
+                android:textAllCaps="false"
+                android:textColor="#7C7C7C"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_bck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="20dp"
+                android:text="Join Date"
+                android:textAllCaps="false"
+                android:textColor="#302F2F"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/joindateb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="20dp"
+                android:text="16 december 2023"
+                android:textAllCaps="false"
+                android:textColor="#7C7C7C"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="22dp"
+            android:text="Settings"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/notification_bottom"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Notification and Sounds"
+                    android:textAllCaps="false"
+                    android:textColor="#757474"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/lock"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:gravity="left"
+                    android:text="Privacy and Security"
+                    android:textAllCaps="false"
+                    android:textColor="#757474"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/data_collection"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:gravity="left"
+                    android:text="Data and Collection"
+                    android:textAllCaps="false"
+                    android:textColor="#757474"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

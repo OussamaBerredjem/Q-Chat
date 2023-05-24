@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#FFD4DDE6"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#608FD6"
+        android:orientation="horizontal"
+
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/jujo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#608ED5"
+            android:src="@drawable/ic_return"></ImageButton>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ted"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/fullnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:text="Oussama Berredjem"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="1dp"
+            android:gravity="right">
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="#608FD6"
+                android:src="@drawable/ic_call"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/ic_video"
+                android:visibility="invisible"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="9dp"
+                android:onClick="gogo"
+                android:src="@drawable/ic_info"></ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/linear"
+        android:layout_below="@+id/info"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/backg"
+        android:isScrollContainer="false"
+        android:paddingTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        tools:listitem="@layout/datashow"></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+
+
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="9dp"
+        android:background="#FFD4DDE6"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/info">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="110"
+            android:background="#D4DDE6"
+
+            android:paddingLeft="11dp">
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:background="#03FFFFFF"
+                android:src="@drawable/ic_camera"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/vocal"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:background="#03FFFFFF"
+                android:src="@drawable/ic_vocal"
+
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/imojie"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:background="#03FFFFFF"
+                android:src="@drawable/ic_emoji"
+
+                ></ImageButton>
+
+
+            <EditText
+
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/Button"
+                android:layout_weight="120"
+                android:background="@drawable/edittxt_send"
+                android:gravity="center_vertical"
+                android:hint="Enter Message"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="9dp"
+                android:layout_gravity="center_vertical"
+                android:shadowColor="#3F51B5"
+                android:textColor="@color/white"
+                android:textColorHighlight="#DAA57EEA"
+                android:textColorHint="#F3F2F2"
+                android:textColorLink="#673AB7"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_marginBottom="3dp"
+            android:id="@+id/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/editTextTextPersonName"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/like_svgrepo_com" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/floating"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/info"
+        android:layout_alignBottom="@+id/recycler_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

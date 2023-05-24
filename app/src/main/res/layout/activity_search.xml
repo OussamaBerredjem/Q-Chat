@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/activity_profile_amis_scene2"
+    tools:context=".Search_Activity"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_return2"></ImageView>
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:drawablePadding="8dp"
+            android:background="@color/white"
+            android:hint="Rechercher"
+            android:textColorHint="#5C5C5C"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            ></EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C3C3C5"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        >
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_marginTop="21dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/bot"
+                android:id="@+id/suggest_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/view_holder_2"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment"
+    android:orientation="vertical"
+    android:id="@+id/fragment_container"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/chatup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:background="@color/chatup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Freinds"
+            android:textSize="26sp"
+            android:textColor="@color/search"
+            ></TextView>
+        <LinearLayout
+            android:background="@color/chatup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="20dp">
+            <ImageView
+                android:background="@color/chatup"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/floatinge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/info"
+                android:layout_alignBottom="@+id/recycler_view"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_add_friend"
+
+
+                ></ImageView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:onClick="logout"
+                android:layout_marginTop="15dp"
+                android:id="@+id/SRCHE"
+                android:background="@color/chatup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/info"
+                android:layout_alignBottom="@+id/recycler_view"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_search1"
+
+                ></de.hdodenhof.circleimageview.CircleImageView></LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E6E8"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:paddingTop="29dp"
+        android:gravity="center"
+        android:background="@drawable/chat_list"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ajouter_story"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="40dp"
+            android:background="@color/chatup"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyproe"
+            android:background="@color/chatup"
+            tools:listitem="@layout/view_holder_2"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

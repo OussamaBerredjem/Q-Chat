@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinApp"
+    android:background="#3F51B4"
+    >
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/joining"></ImageView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/join_signup"
+android:layout_marginBottom="4dp"
+            android:background="@drawable/joining_bg"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="SignUp"
+            android:layout_height="wrap_content"></Button>
+<LinearLayout
+    android:layout_marginTop="7dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="40dp">
+    <TextView
+    android:text="Already have an account? "
+        android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:id="@+id/signin"
+
+        android:text=" SignIn"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView></LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

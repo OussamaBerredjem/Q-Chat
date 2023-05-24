@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#00FFFFFF"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:id="@+id/datt"
+    android:paddingRight="20dp"
+    tools:context=".datash">
+
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/back"
+        android:paddingTop="3dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="10dp">
+
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:maxWidth="250dp"
+            android:minWidth="50dp"
+            android:paddingRight="6dp"
+            android:text="Hi"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_marginBottom="1dp"
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/message_text"
+            android:foregroundGravity="bottom"
+            android:gravity="bottom"
+            android:textColor="#707070"
+
+            android:textSize="8sp"
+            tools:text="11:34" />
+    </LinearLayout>
+</RelativeLayout>
